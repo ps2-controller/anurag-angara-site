@@ -50,7 +50,7 @@ function App() {
           >
           <h4>About Me </h4>
           <p>
-            I'm a Tar Heel with a Business Administration degree, self-taught coding skills, and a passion for product management. Over drinks, I can talk for hours about books, music, travel, and technology, the last of which is where I'm dedicated work-wise.  
+            I'm a Tar Heel Alum with a B.S. in Business Administration, self-taught coding skills, and a passion for product management. Over drinks, I can talk for hours about books, music, travel, and technology, the last of which is where I'm dedicated work-wise.  
           </p>
           <p>
             I have spent the last few years on a deep dive into blockchain technology. I worked as a Product Manager for <a
