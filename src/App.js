@@ -13,8 +13,6 @@ function App() {
           className={classes.AppBody}
           style={
             {
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
               maxWidth: '100%',
               height: 'auto',
               position: 'relative',

@@ -7,9 +7,9 @@
   overflow-x: scroll;
 }
 
-@media screen and (max-width: 400px) {
-  footer {
-    padding-left: 0px;
-    padding-right: 0px;
+@media screen and (max-width: 700px) {
+  .footer {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
