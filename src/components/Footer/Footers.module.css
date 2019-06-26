@@ -1,0 +1,15 @@
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 40%;
+  padding-right: 50%;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: 400px) {
+  footer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

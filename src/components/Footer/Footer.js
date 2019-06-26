@@ -1,11 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import banners from './../../styles/banners';
 import github from './../../Assets/GitHub.svg';
 import twitter from './../../Assets/Twitter.svg';
 import blog from './../../Assets/Blog.svg';
 import linkedin from './../../Assets/LinkedIn.svg';
 
+import cssStyles from './Footers.module.css';
+
 export default function Footer(){
+
+  const GitHub = github;
+  const Twitter = twitter;
+  const Blog = blog;
+  const LinkedIn = linkedin
 
   const data = [
     {
@@ -26,15 +33,11 @@ export default function Footer(){
     }
   ]
 
-  let GitHub = github;
-  let Twitter = twitter;
-  let Blog = blog;
-  let LinkedIn = linkedin
-
   const footerItems = data.map((d, index) => {
     console.log(eval(d.Name))
   return (
   <a
+  key={d.Name}
   href={d.Url}
   target={"_blank"}
   >
@@ -44,7 +47,8 @@ export default function Footer(){
     alt={d.Name}
     style={
       {
-        paddingTop: '30px'
+        paddingTop: '30px',
+        paddingRight: '30px'
       }
     }
     />
@@ -54,18 +58,13 @@ export default function Footer(){
   return(
     <div
       style={Object.assign({}, banners.footer, {
-        alignItems: 'center'
+        alignItems: 'center',
+        maxWidth: '100%',
+        height: 'auto'
       })}   
     >   
     <div
-      style={
-        {
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr 1fr 1fr',
-          paddingLeft: '500px',
-          paddingRight: '500px',
-        }
-      }
+      className={cssStyles.footer}
     >
       {footerItems}
     </div>
